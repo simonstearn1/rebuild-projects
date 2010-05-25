@@ -1,0 +1,45 @@
+= Redmine Rebuild Projects
+
+Rake task to invoke rebuild of nested sets - allowing simple import of project data without setting up the lft/rgt stuff. Obviously suggesting a nasty hack is happening elsewhere :-)
+
+==Author
+
+* Simon Stearn
+
+==Changelog
+
+==Compatibility
+
+This plugin is compatible with Redmine 0.9.2 and possibly other releases >0.9 (untested).
+
+==Obtaining 
+
+<i>URL of the GitHub repository: http://github.com/simonstearn/redmine_rebuild_projects</i>
+
+The source of this plugin can be "cloned" from the GitHub-repo using:
+
+<tt>$ cd {RAILS_ROOT}/vendor/plugins && git clone git://github.com/simonstearn/redmine_rebuild_projects.git</tt>
+
+==Installation
+
+- Download the plugin from the available source (see http://www.redmine.org/wiki/redmine/PluginWhining )
+- Install the plugin as described at: http://www.redmine.org/wiki/redmine/Plugins (<b>this plugin DO NOT require a plugin database migration</b>)
+
+==Usage
+
+    /usr/bin/rake redmine:rebuild_projects RAILS_ENV="production"
+
+==Uninstalling
+
+- Remove the directory <i>"redmine_rebuild_projects"</i> from the plugin-directory <i>"../vendor/plugins"</i>
+
+==Licensing
+
+This plugin is open-source and licensed under the "GNU General Public License v2" (GPL, http://www.gnu.org/licenses/old-licenses/gpl-2.0.html). See the included <tt>GPL.txt</tt> and <tt>LICENSE.txt</tt> files for details.
+
+* (C)2010, Simon Stearn
+
+==Support
+
+None.
+
